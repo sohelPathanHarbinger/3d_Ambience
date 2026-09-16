@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Placeholder portrait: replace with a real photo (jpg/png) and update tour-data.js -->
+  <rect width="300" height="300" rx="24" fill="#3d3357"/>
+  <circle cx="150" cy="70" r="26" fill="#2a1d17"/>
+  <path d="M40 300 C40 232 90 206 150 206 C210 206 260 232 260 300 Z" fill="#8e7dbe"/>
+  <path d="M128 190 h44 v26 a22 22 0 0 1 -44 0 Z" fill="#d9a57c"/>
+  <circle cx="150" cy="130" r="52" fill="#e8b891"/>
+  <path d="M98 128 C96 88 122 76 150 76 C180 76 206 90 202 128 C190 108 170 100 150 100 C128 100 108 110 98 128 Z" fill="#2a1d17"/>
+  <text x="150" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">HR</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Placeholder portrait: replace with a real photo (jpg/png) and update tour-data.js -->
+  <rect width="300" height="300" rx="24" fill="#1e2a4b"/>
+  <path d="M86 128 C86 60 214 60 214 128 L222 210 L78 210 Z" fill="#3b2a20"/>
+  <path d="M40 300 C40 232 90 206 150 206 C210 206 260 232 260 300 Z" fill="#e23744"/>
+  <path d="M128 190 h44 v26 a22 22 0 0 1 -44 0 Z" fill="#e8b891"/>
+  <circle cx="150" cy="130" r="52" fill="#f2c9a5"/>
+  <path d="M98 124 C100 80 130 72 150 72 C176 72 200 86 202 120 C184 104 160 96 132 100 C116 104 104 112 98 124 Z" fill="#3b2a20"/>
+  <text x="150" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">CEO</text>
+</svg>

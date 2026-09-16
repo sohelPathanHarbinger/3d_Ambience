@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Placeholder in Harbinger Group colours. Replace with the official logo file from the brand team. -->
+  <rect width="480" height="280" rx="24" fill="#ffffff"/>
+  <g fill="none" stroke="#e23744" stroke-width="13" stroke-linecap="round">
+    <path d="M92 62 C100 84 88 102 68 114"/>
+    <path d="M84 132 C62 144 50 162 56 186"/>
+  </g>
+  <text x="128" y="112" font-size="50" font-weight="700" fill="#1e2a4b">Harbinger</text>
+  <text x="128" y="164" font-size="50" font-weight="700" fill="#1e2a4b">Group</text>
+  <path d="M131 190 H206" stroke="#1e2a4b" stroke-width="5" stroke-linecap="round"/>
+  <text x="130" y="224" font-size="17" font-weight="600" fill="#e23744">Transforming The Way People</text>
+  <text x="130" y="247" font-size="17" font-weight="600" fill="#e23744">Work and Learn</text>
+</svg>

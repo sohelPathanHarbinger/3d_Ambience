@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="400" height="300" rx="20" fill="#1e2a4b"/>
+  <circle cx="200" cy="150" r="130" fill="#ffffff" opacity="0.04"/>
+  <!-- Scanner body -->
+  <rect x="130" y="28" width="140" height="232" rx="18" fill="#1d2b38" stroke="#3b5670" stroke-width="3"/>
+  <rect x="148" y="46" width="104" height="56" rx="6" fill="#1f8f4e"/>
+  <text x="200" y="70" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">ACCESS</text>
+  <text x="200" y="90" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">GRANTED</text>
+  <!-- Fingerprint -->
+  <g fill="none" stroke="#5ec8ff" stroke-width="4" stroke-linecap="round">
+    <path d="M200 188 v34"/>
+    <path d="M188 222 v-34 a12 12 0 0 1 24 0 v26"/>
+    <path d="M176 214 v-26 a24 24 0 0 1 48 0 v30"/>
+    <path d="M164 206 v-18 a36 36 0 0 1 72 0 v22"/>
+    <path d="M156 170 a46 46 0 0 1 88 0"/>
+  </g>
+  <!-- Check badge -->
+  <circle cx="300" cy="72" r="26" fill="#3ddc84"/>
+  <path d="M288 72 l9 9 l16 -18" stroke="#1e2a4b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

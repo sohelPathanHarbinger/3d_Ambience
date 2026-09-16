@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Placeholder portrait: replace with a real photo (jpg/png) and update tour-data.js -->
+  <rect width="300" height="300" rx="24" fill="#27496b"/>
+  <path d="M40 300 C40 232 90 206 150 206 C210 206 260 232 260 300 Z" fill="#4f8a6b"/>
+  <path d="M128 190 h44 v26 a22 22 0 0 1 -44 0 Z" fill="#b98760"/>
+  <circle cx="150" cy="130" r="52" fill="#c99a72"/>
+  <path d="M98 122 C98 84 124 70 152 70 C182 70 204 88 202 122 C196 104 180 96 150 96 C122 96 104 104 98 122 Z" fill="#1d1a18"/>
+  <g fill="none" stroke="#1d1a18" stroke-width="4">
+    <circle cx="130" cy="134" r="14"/><circle cx="170" cy="134" r="14"/><path d="M144 134 h12"/>
+  </g>
+  <text x="150" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">CTO</text>
+</svg>

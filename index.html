@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Tour</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--
+    Three.js is loaded from a CDN using an "import map" — no npm / build step needed.
+    To run fully offline: download these files into a local /vendor folder and change the two URLs.
+  -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<!-- Which project is shown: ACTIVE_PROJECT in engine/config.js (or ?project=<folder> in the address) -->
+<body>
+  <!-- The 3D scene is drawn into this canvas -->
+  <canvas id="scene"></canvas>
+
+  <!-- ============ INTRO / START SCREEN ============ -->
+  <section id="intro" class="overlay">
+    <div class="intro-card">
+      <!-- These texts come from the project's project-config.js → intro (engine/ui/branding.js) -->
+      <p id="intro-kicker" class="intro-kicker"></p>
+      <h1 id="intro-title">Welcome</h1>
+      <p id="intro-text"></p>
+      <div class="intro-actions">
+        <button id="btn-start-auto" class="btn btn-primary" disabled>▶ Start guided tour</button>
+        <button id="btn-start-manual" class="btn" disabled>Explore at my own pace</button>
+      </div>
+      <p id="intro-status" class="intro-status">Loading…</p>
+      <ul class="intro-help">
+        <li id="help-walk">Arrow keys to walk</li> <!-- filled from CONFIG.walk.keys by ui/hud.js -->
+        <li id="help-look"><b>Drag</b> to look around</li> <!-- filled from CONFIG.look by ui/hud.js -->
+        <li><b>Click</b> a marker for details</li>
+        <li><b>◀ ▶</b> buttons for the guided stops</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ HUD (visible during the tour) ============ -->
+  <div id="hud" class="hud is-hidden">
+    <div class="brand">
+      <img id="brand-mark" class="brand-mark" alt="" /> <!-- project-config.js → logoMark -->
+      <span id="brand-name"></span>                     <!-- project-config.js → companyName -->
+    </div>
+    <!-- #hint-walk is filled from CONFIG.walk.keys by ui/hud.js -->
+    <p class="hint"><span id="hint-walk"></span><span id="hint-look">Drag to look around</span> · Click the markers</p>
+
+    <div id="panel" class="panel">
+      <!-- Collapse / expand the panel (ui/hud.js) -->
+      <button id="btn-panel-toggle" class="btn panel-toggle" aria-expanded="true" title="Hide details">▾</button>
+      <div class="caption">
+        <p id="stop-step" class="stop-step"></p>
+        <h2 id="stop-name"></h2>
+        <p id="stop-desc"></p>
+        <button id="btn-restart" class="btn btn-small is-hidden">↺ Restart tour</button>
+      </div>
+      <div class="controls">
+        <button id="btn-prev" class="btn btn-icon" title="Previous stop">◀</button>
+        <div id="dots" class="dots"></div>
+        <button id="btn-next" class="btn btn-icon" title="Next stop">▶</button>
+        <button id="btn-auto" class="btn btn-auto" title="Automatically move to the next stop">
+          <span>Auto</span>
+          <span class="auto-bar"><span id="auto-progress"></span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small label that follows the mouse when hovering a marker -->
+  <div id="tooltip" class="tooltip"></div>
+
+  <!-- Black overlay used to fade when jumping between far-away stops -->
+  <div id="fade" class="fade"></div>
+
+  <!-- ============ INFO POPUP (filled by engine/ui/popup.js) ============ -->
+  <div id="popup" class="popup" aria-hidden="true">
+    <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <button class="popup-close" aria-label="Close">✕</button>
+      <header class="popup-header">
+        <h2 id="popup-title"></h2>
+        <p class="popup-subtitle"></p>
+      </header>
+      <div class="popup-body"></div>
+    </div>
+  </div>
+
+  <!-- Friendly message if the page is opened directly from disk (modules need a web server) -->
+  <script>
+    var status = document.getElementById('intro-status');
+    if (location.protocol === 'file:') {
+      status.innerHTML =
+        '⚠ This page must be opened through a local web server, not by double-clicking the file.<br>' +
+        'See README.md → "How to run" (e.g. VS Code "Live Server" or <code>python -m http.server</code>).';
+    } else {
+      // If the 3D scene hasn't loaded after 15 s, explain the most likely causes
+      setTimeout(function () {
+        if (document.getElementById('btn-start-auto').disabled) {
+          status.textContent = 'Still loading… Three.js is loaded from the internet (CDN), so check your connection. ' +
+            'Press F12 → Console to see any errors.';
+        }
+      }, 15000);
+    }
+  </script>
+  <script type="module" src="engine/boot.js"></script>
+</body>
+</html>

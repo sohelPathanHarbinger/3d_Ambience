@@ -1,0 +1,11 @@
+# OS / editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Only if you ever add build tooling
+node_modules/
+dist/

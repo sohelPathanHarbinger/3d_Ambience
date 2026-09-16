@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#e8eef3"/>
+  <!-- Window -->
+  <rect x="30" y="26" width="340" height="96" rx="6" fill="#bcd8ee"/>
+  <path d="M30 100 H370" stroke="#9fc0a0" stroke-width="22"/>
+  <path d="M143 26 V122 M257 26 V122" stroke="#ffffff" stroke-width="5"/>
+  <!-- Floor -->
+  <rect y="214" width="400" height="66" fill="#5c6876"/>
+  <!-- Partition -->
+  <rect x="40" y="118" width="320" height="64" rx="4" fill="#8593a1"/>
+  <rect x="40" y="114" width="320" height="6" rx="2" fill="#aab2ba"/>
+  <!-- Desks -->
+  <rect x="40" y="176" width="156" height="9" fill="#efe9df"/>
+  <rect x="204" y="176" width="156" height="9" fill="#efe9df"/>
+  <g fill="#cfcac1">
+    <rect x="44" y="185" width="6" height="36"/><rect x="186" y="185" width="6" height="36"/>
+    <rect x="208" y="185" width="6" height="36"/><rect x="350" y="185" width="6" height="36"/>
+  </g>
+  <!-- Monitors -->
+  <g>
+    <rect x="86" y="128" width="64" height="40" rx="3" fill="#26282c"/><rect x="90" y="132" width="56" height="32" fill="#2a6fb0"/>
+    <rect x="114" y="168" width="8" height="8" fill="#26282c"/>
+    <rect x="250" y="128" width="64" height="40" rx="3" fill="#26282c"/><rect x="254" y="132" width="56" height="32" fill="#2a6fb0"/>
+    <rect x="278" y="168" width="8" height="8" fill="#26282c"/>
+  </g>
+  <!-- Chairs -->
+  <g>
+    <rect x="96" y="172" width="44" height="46" rx="8" fill="#2f5d8a"/><rect x="100" y="216" width="36" height="10" rx="4" fill="#2f5d8a"/>
+    <rect x="260" y="172" width="44" height="46" rx="8" fill="#c9303e"/><rect x="264" y="216" width="36" height="10" rx="4" fill="#c9303e"/>
+    <rect x="115" y="226" width="6" height="22" fill="#26282c"/><rect x="279" y="226" width="6" height="22" fill="#26282c"/>
+    <rect x="98" y="246" width="40" height="5" rx="2" fill="#26282c"/><rect x="262" y="246" width="40" height="5" rx="2" fill="#26282c"/>
+  </g>
+  <!-- Plant -->
+  <rect x="358" y="206" width="26" height="30" rx="3" fill="#efece6"/>
+  <circle cx="371" cy="192" r="18" fill="#3f8a4a"/><circle cx="362" cy="178" r="12" fill="#2f6e3a"/>
+</svg>

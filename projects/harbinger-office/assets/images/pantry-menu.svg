@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="420" height="520" rx="18" fill="#23302a"/>
+  <rect x="18" y="18" width="384" height="484" rx="10" fill="none" stroke="#f5f1e6" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="210" y="80" text-anchor="middle" font-size="34" font-weight="700" fill="#f5f1e6" letter-spacing="2">TODAY'S MENU</text>
+  <path d="M130 100 H290" stroke="#ff6b78" stroke-width="4" stroke-linecap="round"/>
+  <g font-size="20" fill="#f5f1e6">
+    <text x="50" y="160">Veg Biryani</text>          <text x="370" y="160" text-anchor="end">₹ 120</text>
+    <text x="50" y="215">Grilled Paneer Wrap</text>  <text x="370" y="215" text-anchor="end">₹ 90</text>
+    <text x="50" y="270">Garden Salad</text>         <text x="370" y="270" text-anchor="end">₹ 70</text>
+    <text x="50" y="325">Fresh Fruit &amp; Juice</text> <text x="370" y="325" text-anchor="end">₹ 60</text>
+  </g>
+  <g font-size="15" fill="#c9c3b3">
+    <text x="50" y="182">Basmati rice, seasonal vegetables, raita</text>
+    <text x="50" y="237">Whole-wheat wrap, mint chutney</text>
+    <text x="50" y="292">Greens, olive oil, lemon dressing</text>
+    <text x="50" y="347">Seasonal fruit, cold-pressed juice</text>
+  </g>
+  <text x="210" y="430" text-anchor="middle" font-size="18" fill="#ff6b78">☕ Coffee &amp; tea are always free</text>
+  <text x="210" y="465" text-anchor="middle" font-size="14" fill="#c9c3b3">Sample menu. Replace assets/images/pantry-menu.svg</text>
+</svg>

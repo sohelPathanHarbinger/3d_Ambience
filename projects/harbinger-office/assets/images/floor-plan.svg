@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 840" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Floor plan of the virtual office. 15 px = 1 m. Matches js/world/office.js -->
+  <rect width="420" height="840" fill="#eef1ec"/>
+  <rect x="0" y="660" width="420" height="180" fill="#d9e6cf"/>
+  <rect x="172" y="660" width="75" height="180" fill="#d4d2cc"/>
+
+  <!-- Rooms -->
+  <rect x="30" y="30" width="360" height="120" fill="#f3e6cf"/>
+  <rect x="30" y="150" width="135" height="180" fill="#d3dae5"/>
+  <rect x="165" y="150" width="90" height="180" fill="#efe6d8"/>
+  <rect x="255" y="150" width="135" height="60" fill="#e9dcc5"/>
+  <rect x="255" y="210" width="135" height="60" fill="#e3d5bb"/>
+  <rect x="255" y="270" width="135" height="60" fill="#e9dcc5"/>
+  <rect x="30" y="330" width="360" height="210" fill="#dfe5ea"/>
+  <rect x="30" y="540" width="360" height="120" fill="#f7f5f0"/>
+
+  <!-- Furniture -->
+  <g fill="#9aa6b2">
+    <rect x="60" y="368" width="44" height="45" rx="3"/><rect x="120" y="368" width="44" height="45" rx="3"/>
+    <rect x="256" y="368" width="44" height="45" rx="3"/><rect x="316" y="368" width="44" height="45" rx="3"/>
+    <rect x="60" y="458" width="44" height="45" rx="3"/><rect x="120" y="458" width="44" height="45" rx="3"/>
+    <rect x="256" y="458" width="44" height="45" rx="3"/><rect x="316" y="458" width="44" height="45" rx="3"/>
+  </g>
+  <rect x="63" y="229" width="66" height="22" rx="4" fill="#6b4a32"/>
+  <rect x="109" y="588" width="51" height="13" rx="3" fill="#1e2a4b"/>
+  <rect x="120" y="30" width="120" height="9" fill="#3d4a5c"/>
+  <g fill="#6b4a32"><rect x="330" y="285" width="14" height="30"/><rect x="330" y="225" width="14" height="30"/><rect x="330" y="165" width="14" height="30"/></g>
+
+  <!-- Walls -->
+  <g stroke="#2b2f36" stroke-width="4" fill="none" stroke-linecap="square">
+    <rect x="30" y="30" width="360" height="630"/>
+    <path d="M30 150 H165 M255 150 H390 M30 330 H165 M255 330 H390 M255 210 H390 M255 270 H390 M30 540 H195 M225 540 H390"/>
+  </g>
+  <path d="M165 150 V330 M255 150 V330" stroke="#5aa9d6" stroke-width="3"/>
+  <!-- Door openings -->
+  <g stroke="#eef1ec" stroke-width="6">
+    <path d="M188 660 H232" stroke="#d4d2cc"/>
+    <path d="M165 229 V251" stroke="#efe6d8"/>
+    <path d="M255 171 V189 M255 231 V249 M255 291 V309" stroke="#efe6d8"/>
+  </g>
+
+  <!-- Labels -->
+  <g font-size="13" font-weight="600" fill="#3a4450" text-anchor="middle">
+    <text x="210" y="95">PANTRY</text>
+    <text x="97" y="190">MEETING</text>
+    <text x="97" y="206">ROOM</text>
+    <text x="365" y="185">HR</text>
+    <text x="365" y="245">CTO</text>
+    <text x="365" y="305">CEO</text>
+    <text x="210" y="440">OPEN WORKSPACE</text>
+    <text x="100" y="630">RECEPTION</text>
+    <text x="325" y="610">LOUNGE</text>
+    <text x="300" y="735" fill="#4b6b3a">ENTRANCE</text>
+  </g>
+
+  <!-- Tour path -->
+  <polyline fill="none" stroke="#e23744" stroke-width="3" stroke-dasharray="7 6" stroke-linejoin="round"
+    points="210,810 210,687 219,651 247.5,636 214.5,588 210,513 210,262.5 186,240 145.5,240 186,240 231,300 276,300 231,300 231,240 276,240 231,240 231,180 276,180 231,180 210,159 210,135"/>
+
+  <!-- Stops -->
+  <g font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <g><circle cx="210" cy="810" r="11" fill="#e23744"/><text x="210" y="814">1</text></g>
+    <g><circle cx="247.5" cy="636" r="11" fill="#e23744"/><text x="247.5" y="640">2</text></g>
+    <g><circle cx="214.5" cy="588" r="11" fill="#e23744"/><text x="214.5" y="592">3</text></g>
+    <g><circle cx="210" cy="513" r="11" fill="#e23744"/><text x="210" y="517">4</text></g>
+    <g><circle cx="145.5" cy="240" r="11" fill="#e23744"/><text x="145.5" y="244">5</text></g>
+    <g><circle cx="276" cy="300" r="11" fill="#e23744"/><text x="276" y="304">6</text></g>
+    <g><circle cx="276" cy="240" r="11" fill="#e23744"/><text x="276" y="244">7</text></g>
+    <g><circle cx="276" cy="180" r="11" fill="#e23744"/><text x="276" y="184">8</text></g>
+    <g><circle cx="210" cy="135" r="11" fill="#e23744"/><text x="210" y="139">9</text></g>
+  </g>
+</svg>
